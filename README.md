@@ -1,4 +1,4 @@
-# access-learn-# AccessLearn
+# AccessLearn
 
 An open-source assistive learning platform designed to make standard educational materials accessible for blind, low-vision, and deaf students.
 
@@ -8,23 +8,30 @@ Millions of visually and hearing-impaired students—particularly in developing 
 ## What We Are Building
 AccessLearn is a modular, open-source toolkit that bridges this gap by converting standard curricula into accessible, interactive formats:
 
-* **Voice-First Navigation & Screen-Reader Optimization:** Clean, distraction-free interfaces strictly compliant with WCAG standards, allowing blind students to navigate lessons independently using audio cues and keyboard shortcuts.
+* **Voice-First Navigation & Screen-Reader Optimization:** Clean, distraction-free interfaces strictly compliant with WCAG 2.1 AA/AAA standards, allowing blind students to navigate lessons independently using audio cues and keyboard shortcuts.
 * **Automated Visual Descriptions:** Tools that generate clear, context-aware text and audio descriptions for educational diagrams, charts, and images.
 * **Smart Transcription & Structured Captions:** Real-time captioning and simplified text summaries for video and audio lectures, helping deaf and hard-of-hearing learners follow along effortlessly.
 * **Lightweight & Localizable:** Built to run smoothly on low-bandwidth connections and easily adaptable to local languages.
 
-## Current Project Status
-This project is currently in the **early development and prototyping phase**. We are actively building the core content-adaptation engine and testing basic UI workflows for screen readers.
+## Tech Stack & Architecture
+* **Frontend:** React.js, Next.js, Tailwind CSS (built with semantic HTML5 and ARIA attributes for seamless screen-reader compatibility).
+* **Backend:** Python, FastAPI (high-performance asynchronous API for media, audio, and text processing).
+* **AI & Accessibility Engine:** 
+  * Large Language Models (Claude API) for curriculum simplification, structured note generation, and context-aware visual descriptions.
+  * Speech-to-Text (Whisper) & Web Speech API for real-time transcription and voice-guided navigation.
+* **Database & Storage:** PostgreSQL, Redis (for caching processed audio/text modules).
 
-## Roadmap
-- [x] Define core accessibility architecture and project scope
-- [ ] Build the initial prototype for text-to-audio lesson conversion
-- [ ] Implement automated image-to-text description module for study materials
-- [ ] Develop accessible web interface (WCAG 2.1 AA/AAA compliant)
-- [ ] Pilot testing with local special-needs educators and students
+## Getting Started (Local Development)
 
-## Contributing
-We welcome contributions from developers, accessibility advocates, and educators. Whether you want to help with frontend accessibility, backend processing, or localization, feel free to open an issue or submit a pull request.
+```bash
+# Clone the repository
+git clone [https://github.com/your-username/access-learn.git](https://github.com/your-username/access-learn.git)
 
-## License
-This project is licensed under the MIT License - see the `LICENSE` file for details.
+# Navigate to the project directory
+cd access-learn
+
+# Install backend dependencies
+pip install -r requirements.txt
+
+# Install frontend dependencies
+cd frontend && npm install
