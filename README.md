@@ -25,13 +25,13 @@ AccessLearn is a modular, open-source toolkit that bridges this gap by convertin
 
 ```bash
 # Clone the repository
-git clone [https://github.com/your-username/access-learn.git](https://github.com/your-username/access-learn.git)
+git clone [https://github.com/Poliassa/access-learn-.git](https://github.com/Poliassa/access-learn-.git)
 
 # Navigate to the project directory
-cd access-learn
+cd access-learn-
 
 # Install backend dependencies
 pip install -r requirements.txt
 
-# Install frontend dependencies
-cd frontend && npm install
+# Run the backend server
+uvicorn main:app --reload
